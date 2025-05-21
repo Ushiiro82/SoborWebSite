@@ -1,0 +1,268 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Stem, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1207px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  .header-container {
+    z-index: 10;
+  }
+  
+  .header-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo-column {
+    width: 60%;
+  }
+  
+  .logo-wrapper {
+    position: relative;
+    min-height: 852px;
+    padding: 22px 80px 734px;
+  }
+  
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .logo {
+    aspect-ratio: 1.15;
+    object-fit: contain;
+    width: 110px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content-column {
+    width: 40%;
+    margin-left: 20px;
+  }
+  
+  .content-wrapper {
+    margin-top: 22px;
+    color: #000000;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 27px;
+    width: 333px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .nav-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .monument-title {
+    color: #AF4F2B;
+    font-size: 80px;
+    font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 119px;
+  }
+  
+  .title-regular {
+    font-size: 50px;
+    color: #000000;
+  }
+  
+  .monument-description {
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 26px;
+    letter-spacing: 1.44px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 83px;
+  }
+  
+  .highlight {
+    font-weight: 500;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #DED8CC;
+    width: 100%;
+  }
+  
+  .footer-divider {
+    aspect-ratio: 7.09;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .footer-content {
+    width: 100%;
+  }
+  
+  .footer-columns {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-column {
+    width: 67%;
+  }
+  
+  .contact-wrapper {
+    border-radius: 177px 0 0 0;
+    background-color: #ffffff;
+    padding: 31px 80px 48px;
+    font-size: 18px;
+  }
+  
+  .contact-title {
+    font-size: 28px;
+    font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .accent-letter {
+    color: #AF4F2B;
+    font-size: 45px;
+  }
+  
+  .phone-number {
+    font-weight: 350;
+    text-transform: uppercase;
+    margin-top: 22px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 31px;
+    text-decoration: underline;
+  }
+  
+  .contact-label {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .contact-icon {
+    aspect-ratio: 3.5;
+    width: 28px;
+    object-fit: contain;
+  }
+  
+  .contact-value {
+    font-weight: 350;
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .footer-links {
+    display: flex;
+    margin-top: 51px;
+    gap: 76px;
+    font-size: 15px;
+    color: #5E5E5E;
+    font-weight: 350;
+    text-transform: uppercase;
+  }
+  
+  .footer-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .image-column {
+    width: 33%;
+    margin-left: 20px;
+  }
+  
+  .footer-image {
+    aspect-ratio: 1.2;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 177px 0 0 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .header-container {
+      max-width: 100%;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .logo-column,
+    .content-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .logo-wrapper {
+      padding: 20px 20px 100px;
+    }
+  
+    .main-nav {
+      margin-right: 10px;
+    }
+  
+    .monument-title {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  
+    .monument-description {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .footer-columns {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .contact-column,
+    .image-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .contact-wrapper {
+      padding: 20px;
+    }
+  
+    .footer-links {
+      margin-top: 40px;
+    }
+  
+    .footer-image {
+      max-width: 100%;
+    }
+  }
+  
