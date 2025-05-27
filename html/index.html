@@ -1,55 +1,144 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <link rel="stylesheet" href="../static/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соборная Площадь</title>
+    <link href="https://fonts.cdnfonts.com/css/denistina" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
-<header class="header">
-  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/52288d8580ad417dae9e2f93509c5a49a316dc46?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Background" class="header-background" />
-  <div class="header-content">
-    <nav class="navigation">
-      <ul class="nav-links">
-        <li><a href="#home">ГЛАВНАЯ</a></li>
-        <li><a href="#about">О ПРОЕКТЕ</a></li>
-        <li><a href="#contacts">КОНТАКТЫ</a></li>
-      </ul>
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c02a61f3d0d97ee8e8c0c6cf0697632dbcae48e?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Logo" class="nav-logo" />
-    </nav>
-    <h1 class="hero-title">СОБОРНАЯ</h1>
-  </div>
-</header>
+<body>
+    <!-- Главный хедер с фоновым изображением -->
+    <header class="header">
+        <img src="../static/img/webp/winter_sobor_ermak.webp" alt="Background" class="header-background" />
+        <div class="header-content">
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">ГЛАВНАЯ</a></li>
+                    <li><a href="#about">О ПРОЕКТЕ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+                <img src="../static/img/Logo/logo_main.png" alt="Logo" class="nav-logo" />
+            </nav>
+            <h1 class="hero-title">СОБОРНАЯ</h1>
+            <h2 class="hero-subtitle">площадь</h2>
+        </div>
+    </header>
 
-<main class="main-content">
-  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b41b72903982ba54dc4bab8888bc12f58c246e75?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Decorative" class="decorative-image" />
-  <section class="contact-section">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2 class="contact-heading">
-          <span class="highlight">К</span>О<span class="spaced">НТАКТЫ</span>
-        </h2>
-        <p class="phone-number">+7 900 000 00 00</p>
+    <!-- Основное содержимое страницы -->
+    <main class="main-content">
 
-        <div class="contact-item">
-          <h3 class="contact-label">ПОЧТА</h3>
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea24c0f2dccf56763357dda8842534001d845941?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Email icon" class="contact-icon" />
-          <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
+        <!-- Секция с призывом к действию -->
+        <div class="page-container">
+            <img src="../static/img/sobor/winter_sobor.jpg" alt="Background" class="map-info-background"/>
+            
+            <div class="map-info">
+                <div class="map-info-overlay"></div>
+                <div class="info">
+                    <h1 class="map-title">
+                        <span class="accent-letter">в</span>згляните<br />
+                        на историю по-новому
+                    </h1>
+                    <p class="map-description">
+                        интерактивный квест-экскурсия для тех,<br />
+                        кто хочет узнать больше о новочеркасске
+                    </p>
+                    <div class="map-buttons">
+                        <button class="start-journey-btn" onclick="location.href = '/html/map.html'">
+                            <img src="../static/img/button/button.png" alt="Background" class="btn-background" />
+                            <span class="btn-text">начать путешествие</span>
+                        </button>
+                        <a href="#about" class="learn-more-link">узнать больше о проекте</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
         </div>
 
-        <div class="contact-item">
-          <h3 class="contact-label">TELEGRAM</h3>
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea24c0f2dccf56763357dda8842534001d845941?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Telegram icon" class="contact-icon" />
-          <a href="https://t.me/job_007" class="contact-link">@job_007</a>
-        </div>
+        <!-- Новый блок перед секцией контактов -->
+        <section class="new-hero-section" id="about">
+            <div class="new-hero-overlay "></div>
+            <div class="info">
+                <h1 class="new-hero-title">
+                    <span class="accent-letter">Ч</span>то вас ждёт?
+                </h1>
+                <p class="new-hero-description">
+                    исследуйте историю Соборной площади через интерактивную карту, загадки и вопросы. узнайте интересные факты об архитектуре, памятниках и событиях прошлого.
+                </p>
+    
+                <div class="new-features">
+                    <div class="new-feature-card">
+                        <img src="../static/img/picture/woman.png" alt="Исследование площади" class="new-feature-image">
+                        <div class="new-feature-content">
+                            <p class="new-feature-text">исследуйте площадь<br>шаг за шагом</p>
+                        </div>
+                    </div>
+    
+                    <div class="new-feature-card">
+                        <img src="../static/img/picture/archero.png" alt="Увлекательные задачи" class="new-feature-image">
+                        <div class="new-feature-content">
+                            <p class="new-feature-text">решайте увлекательные задачи</p>
+                        </div>
+                    </div>
+    
+                    <div class="new-feature-card">
+                        <img src="../static/img/picture/ded.png" alt="История и технологии" class="new-feature-image">
+                        <div class="new-feature-content">
+                            <p class="new-feature-text">оживите историю<br>с помощью технологий</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="new-attribution">
+                    <p>картины и.я. билибина</p>
+                </div>
+            </div>
 
-        <footer class="footer-links">
-          <a href="#terms" class="footer-link">условия пользования</a>
-          <a href="#privacy" class="footer-link">политика конфиденциальности</a>
-        </footer>
-      </div>
+        </section>
 
-      <div class="contact-image">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0feafe7bc3f0b1823dda1e76188daafb7a5236da?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" alt="Contact section" class="rounded-image" />
-      </div>
-    </div>
-  </section>
-</main>
+        <!-- Декоративное изображение -->
+        <img src="../static/img/prikiks/vishivka1.png" alt="Decorative" class="decorative-image" />
+        
+        <!-- Секция контактов -->
+        <section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-heading">
+                        <span class="highlight">К</span>О<span class="spaced">НТАКТЫ</span>
+                    </h2>
+                    <p class="phone-number">+7 900 000 00 00</p>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">ПОЧТА</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">TELEGRAM</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="https://t.me/job_007" class="contact-link">@job_007</a>
+                    </div>
+
+                    <footer class="footer-links">
+                        <a href="#terms" class="footer-link">условия пользования</a>
+                        <a href="#privacy" class="footer-link">политика конфиденциальности</a>
+                    </footer>
+                </div>
+
+                <div class="contact-image">
+                    <img src="../static/img/sobor/kafedr_sobor.png" alt="Contact section" class="rounded-image" />
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>

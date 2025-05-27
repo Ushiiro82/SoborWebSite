@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Stem'; /*a name to be used later*/
+    src: url('../fonts/Stem/Stem-Medium.ttf'); /*URL to font*/
+}
+
+@font-face {
+font-family: 'Zabava'; /*a name to be used later*/
+src: url('../fonts/Zabava/Zabava_mari_chenak_0.ttf'); /*URL to font*/
+}
+  
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ded8cc;
+    overflow-x: hidden;
+}
+    

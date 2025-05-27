@@ -1,0 +1,111 @@
+  /* Contact section */
+  .contact-section {
+    width: 100%;
+    padding-top: 0
+  }
+  
+  .decorative-image {
+    aspect-ratio: 7.09;
+    object-fit: fill;
+    background-repeat: repeat-x;
+    object-position: center;
+    width: 100%;
+  }
+
+  .contact-grid {
+    /* gap: 20px; */
+    display: flex;
+  }
+  
+  /* Contact info */
+  .contact-info {
+    border-radius: 0 177px 0 0;
+    background-color: #ffffff;
+    width: 67%;
+    padding: 31px 80px 48px;
+    font-family: Stem, sans-serif;
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .contact-heading {
+    font-size: 28px;
+    font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .highlight {
+    font-size: 45px;
+    color: #af4f2b;
+  }
+  
+  .spaced {
+    letter-spacing: 0.28px;
+  }
+  
+  .phone-number {
+    font-weight: 350;
+    text-transform: uppercase;
+    margin-top: 22px;
+  }
+  
+  .contact-item {
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: underline;
+  }
+  
+  .contact-label {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .contact-icon {
+    aspect-ratio: 3.5;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+  }
+  
+  .contact-link {
+    font-weight: 350;
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  /* Footer links */
+  .footer-links {
+    display: inline-flex;
+    margin-top: 51px;
+    width: 555px;
+    max-width: 100%;
+    gap: 30px;
+    font-size: 15px;
+    color: #5e5e5e;
+    font-weight: 350;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    color: #5e5e5e;
+    text-decoration: none;
+  }
+  
+  /* Contact image */
+  .contact-image {
+    width: 33%;
+  }
+  
+  .rounded-image {
+    aspect-ratio: 1.2;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 177px 0 0 0;
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соборная Площадь</title>
+    <link href="https://fonts.cdnfonts.com/css/denistina" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/map.css">
+
+</head>
+<body>
+    <!-- Главный хедер с фоновым изображением -->
+    <header class="header">
+        <div class="header-content">
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">ГЛАВНАЯ</a></li>
+                    <li><a href="#about">О ПРОЕКТЕ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+                <img src="../static/img/Logo/logo_brown.png" alt="Logo" class="nav-logo" />
+            </nav>
+        </div>
+    </header>
+
+    <div id="sketches">
+        <div class="sketch-background" id="sketch-left"></div>
+        <div class="sketch-background" id="sketch-right"></div>
+    </div>
+
+    <div class="map-container">
+        <div class="map-content">
+            <div class="background-map"></div>
+            <img src="../static/img/map/map.png" class="map-image">
+        
+            <!-- Красные точки на карте -->
+            <div class="map-element-container ermak">
+                <div class="red-point"></div>
+                <img src="../static/img/pamatniks/ermak_obvodka.png">
+                <div class="info-tooltip">
+                    <h3>Памятник Ермаку</h3>
+                    <p>Установлен в 1904 году в честь казачьего атамана</p>
+                </div>
+            </div>
+
+            <div class="map-element-container baklanov">
+                <div class="red-point"></div>
+                <img src="../static/img/pamatniks/pika_obvodka.png">
+            </div>
+
+            <div class="map-element-container consent-peace">
+                <div class="red-point"></div>
+                <img src="../static/img/pamatniks/mir_obvodka.png">
+            </div>
+
+            <div class="map-element-container ascension-cathedral">
+                <div class="red-point"></div>
+                <img src="../static/img/pamatniks/obvodka_sobor.png">
+            </div>
+            
+            <!-- Кнопка начала экскурсии -->
+            <div class="start-button">
+                <div class="button-text">начать экскурсию</div>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="../static/img/prikiks/vishivka1.png" alt="Decorative" class="decorative-image" />
+    
+    <!-- Секция контактов -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2 class="contact-heading">
+                    <span class="highlight">К</span>О<span class="spaced">НТАКТЫ</span>
+                </h2>
+                <p class="phone-number">+7 900 000 00 00</p>
+
+                <div class="contact-item">
+                    <h3 class="contact-label">ПОЧТА</h3>
+                    <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                    </svg>
+                    <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3 class="contact-label">TELEGRAM</h3>
+                    <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                    </svg>
+                    <a href="https://t.me/job_007" class="contact-link">@job_007</a>
+                </div>
+
+                <footer class="footer-links">
+                    <a href="#terms" class="footer-link">условия пользования</a>
+                    <a href="#privacy" class="footer-link">политика конфиденциальности</a>
+                </footer>
+            </div>
+
+            <div class="contact-image">
+                <img src="../static/img/sobor/kafedr_sobor.png" alt="Contact section" class="rounded-image" />
+            </div>
+        </div>
+    </section>
+</body>
+</html>
