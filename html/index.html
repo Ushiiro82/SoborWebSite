@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Соборная Площадь</title>
     <link href="https://fonts.cdnfonts.com/css/denistina" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
     <!-- Главный хедер с фоновым изображением -->
@@ -44,11 +47,11 @@
                         кто хочет узнать больше о новочеркасске
                     </p>
                     <div class="map-buttons">
-                        <button class="start-journey-btn">
+                        <button class="start-journey-btn" onclick="location.href = '/html/map.html'">
                             <img src="../static/img/button/button.png" alt="Background" class="btn-background" />
                             <span class="btn-text">начать путешествие</span>
                         </button>
-                        <a href="#" class="learn-more-link">узнать больше о проекте</a>
+                        <a href="#about" class="learn-more-link">узнать больше о проекте</a>
                     </div>
                 </div>
               </div>
@@ -57,7 +60,7 @@
         </div>
 
         <!-- Новый блок перед секцией контактов -->
-        <section class="new-hero-section">
+        <section class="new-hero-section" id="about">
             <div class="new-hero-overlay "></div>
             <div class="info">
                 <h1 class="new-hero-title">

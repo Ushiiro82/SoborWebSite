@@ -1,0 +1,298 @@
+.header-content {
+    background-color: #DED8CC;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.nav-links a {
+    color: #3C2F24
+}
+
+
+.navigation {
+    position: absolute;
+}
+
+
+
+
+/* Карта */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    margin: 2% auto;
+}
+
+.map-content {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.67%; /* Соотношение сторон карты (высота/ширина * 100%) */
+}
+
+.map-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+/* Элементы на карте */
+.map-element-container {
+    position: absolute;
+    transform-origin: center center;
+    aspect-ratio: 1 /1;
+}
+
+.map-element-container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+/* Красные точки на карте */
+.red-point {
+    position: absolute;
+    width: 2.2%; /* Относительно ширины карты */
+    height: auto;
+    border-radius: 50%;
+    background: #F66129;
+    aspect-ratio: 1 / 1;
+}
+
+/* Позиционирование элементов в процентах */
+.baklanov {
+    left: 58.5%;
+    top: 58.8%;
+    width: 9.8%; /* Ширина элемента относительно карты */
+}
+
+
+.baklanov .red-point {
+    top: 45%;
+    left: -7.5%;
+    width: 24.7%;
+    height: 40.7%;
+    border-radius: 12px;
+    transform: rotate(-26.78deg);
+}
+
+
+.consent-peace {
+    left: 60%;
+    top: 20%;
+    width: 7.7%
+}
+
+.consent-peace .red-point {
+    top: 154.5%;
+    left: 47%;
+    width: 30%;
+}
+
+
+.ascension-cathedral {
+    left: 41.5%;
+    top: 30.1%;
+    width: 25.8%;
+}
+
+.ascension-cathedral .red-point {
+    top: 33%;
+    left: 21%;
+    width: 45.3%;
+}
+
+.ermak {
+    left: 33.5%;
+    top: 16%;
+    width: 8.8%;
+}
+
+.ermak .red-point {
+    top: 131.5%;
+    left: 22%;
+    width: 30%;
+}
+
+
+/* Кнопка */
+.start-button {
+    position: absolute;
+    width: 12.2%;
+    /* height: 22.6%; */
+    aspect-ratio: 1 / 1;
+    left: 6.67%;
+    top: 41.8%;
+    background-image: url(../img/button/button_roym.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.button-text {
+    
+    position: absolute;
+    width: 46%;
+    height: 19%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Zabava';
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(1vw, 22px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#sketches {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 90%;
+}
+
+.sketch-background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: color-burn;
+    height: 100%;
+    z-index: -1;
+}
+
+#sketch-left {
+    width: 40%;
+    background-image: url(../img/sobor/sketch.png);
+    background-position: left bottom;
+    aspect-ratio: 0.82;
+    margin-left: -10%;
+}
+
+#sketch-right {
+    width: 40%;
+    background-image: url(../img/sobor/sketch1.png);
+    background-position: right bottom;
+    aspect-ratio: 1.21;
+    margin-right: -10%;
+}
+
+.background-map {
+    background-color: #af4f2b; 
+    border-radius: 50px;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    opacity: 80%;
+    /* border: black 2px solid; */
+}
+
+
+
+/* Стили для информационных блоков */
+.info-tooltip {
+    position: absolute;
+    width: 500px;
+    background: rgba(222, 216, 204, 0.95);
+    border: 2px solid #3C2F24;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.info-tooltip h3 {
+    color: #3C2F24;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.info-tooltip p {
+    color: #3C2F24;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Позиционирование для каждого элемента */
+.ermak .info-tooltip {
+    top: 23%;
+    right: 138%;
+    transform: translateX(-50%);
+    margin-bottom: 0px;
+}
+
+/* .baklanov .info-tooltip {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.consent-peace .info-tooltip {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 15px;
+}
+
+.ascension-cathedral .info-tooltip {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+} */
+
+/* Показываем при наведении */
+.map-element-container:hover .info-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1830px) {
+    #sketch-right {
+        display: none;
+    }
+    
+    #sketch-left {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        position: absolute;
+        left: 40%;
+        aspect-ratio: auto;
+    }
+    
+    .map-container {
+        margin: 0 auto;
+    }
+    
+    .background-map {
+        display: none;
+    }
+}
