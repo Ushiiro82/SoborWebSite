@@ -14,6 +14,7 @@
     <!-- Главный хедер с фоновым изображением -->
     <header class="header">
         <img src="../static/img/webp/winter_sobor_ermak.webp" alt="Background" class="header-background" />
+        <div class="overlay"></div>
         <div class="header-content">
             <nav class="navigation">
                 <ul class="nav-links">
@@ -23,18 +24,20 @@
                 </ul>
                 <img src="../static/img/Logo/logo_main.png" alt="Logo" class="nav-logo" />
             </nav>
-            <h1 class="hero-title">СОБОРНАЯ</h1>
-            <h2 class="hero-subtitle">площадь</h2>
+            <div class="hero">
+                <h1 class="hero-title">СОБОРНАЯ</h1>
+                <h2 class="hero-subtitle">площадь</h2>
+            </div>
         </div>
     </header>
 
+
+
     <!-- Основное содержимое страницы -->
     <main class="main-content">
-
         <!-- Секция с призывом к действию -->
         <div class="page-container">
             <img src="../static/img/sobor/winter_sobor.jpg" alt="Background" class="map-info-background"/>
-            
             <div class="map-info">
                 <div class="map-info-overlay"></div>
                 <div class="info">
@@ -92,6 +95,8 @@
                         </div>
                     </div>
                 </div>
+
+                
     
                 <div class="new-attribution">
                     <p>картины и.я. билибина</p>
@@ -104,7 +109,7 @@
         <img src="../static/img/prikiks/vishivka1.png" alt="Decorative" class="decorative-image" />
         
         <!-- Секция контактов -->
-        <section class="contact-section">
+        <section class="contact-section" id="contacts">
             <div class="contact-grid">
                 <div class="contact-info">
                     <h2 class="contact-heading">

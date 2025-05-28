@@ -109,3 +109,21 @@
     width: 100%;
     border-radius: 177px 0 0 0;
   }
+
+@media (max-width: 1480px) {
+  .contact-image {
+    width: 50%
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .contact-image {
+    display: none;
+  }
+
+  .contact-info {
+    width: 100%;
+    border-radius: 0;
+  }
+}
