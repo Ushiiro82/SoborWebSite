@@ -1,61 +1,71 @@
-  /* Header styles */
-  .header {
-    position: relative;
-    width: 100%;
-    color: #ffffff;
-    z-index: 1;
-  }
-  
-  .header-background {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .header-content {
-    position: relative;
-    background-color: rgba(71, 71, 71, 0.54);
-    width: 100%;
-    padding-bottom: 385px;
-  }
-  
-  /* Navigation */
-  .navigation {
-    display: flex;
-    width: 100%;
-    padding: 22px 80px 43px;
-    flex-direction: column;
-    font-family: Stem, -apple-system, Roboto, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  
-  .nav-links {
-    align-self: flex-end;
-    display: flex;
-    width: 331px;
-    max-width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 150px;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
+/* Header styles */
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  width: 100%;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  width: 100%;
+  padding: 22px 30px;
+  flex-direction: column;
+  font-family: Stem, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links {
+  align-self: flex-end;
+  display: flex;
+  width: 50%;
+  max-width: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 2%;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-logo {
+  position: absolute;
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  object-position: center;
+  width: 15%;
+  /* margin-top: 6px; */
+  max-width: 100%;
+}
+
+
+@media (max-width: 620px) {
   .nav-logo {
-    aspect-ratio: 1.14;
-    object-fit: contain;
-    object-position: center;
-    width: 206px;
-    margin-top: 6px;
-    max-width: 100%;
+    width: 10%;
+    top: 10px;
+    left: 2%;
   }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-links {
+    font-size: 12px;
+  }
+}

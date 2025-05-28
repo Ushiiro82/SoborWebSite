@@ -1,26 +1,31 @@
-.header-content {
-    background-color: #DED8CC;
-    height: 100%;
-    padding-bottom: 0;
-}
-
 .nav-links a {
     color: #3C2F24
 }
-
 
 .navigation {
     position: absolute;
 }
 
+#notify-rotate-device {
+    display: none;
+    position: relative;
+    height: 300px;
+    font-size: 17px;
+    font-family: Zabava, sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 20%;
+}
 
 
 /* Карта */
 .map-container {
     position: relative;
     width: 100%;
-    max-width: 1800px;
-    margin: 2% auto;
+    max-width: 1300px;
+    margin: 0% auto;
+    padding: 1% 0;
 }
 
 .map-content {
@@ -44,6 +49,7 @@
     position: absolute;
     transform-origin: center center;
     aspect-ratio: 1 /1;
+    z-index: 5;
 }
 
 .map-element-container img {
@@ -76,7 +82,7 @@
     left: 58.5%;
     top: 58.8%;
     width: 9.8%; /* Ширина элемента относительно карты */
-    z-index: 3;
+    z-index: 7;
 
     .red-point {
         top: 45%;
@@ -93,7 +99,7 @@
     left: 60%;
     top: 20%;
     width: 7.7%;
-    z-index: 3;
+    z-index: 7;
 
     .red-point {
         top: 154.5%;
@@ -108,6 +114,7 @@
     left: 41.5%;
     top: 30.1%;
     width: 25.8%;
+    z-index: 6;
 
     .red-point {
         top: 33%;
@@ -120,6 +127,7 @@
     left: 33.5%;
     top: 16%;
     width: 8.8%;
+    z-index: 6;
 
     .red-point {
         top: 131.5%;
@@ -184,7 +192,8 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    height: 90%;
+    height: 100%;
+    overflow-x: clip;
 }
 
 .sketch-background {
@@ -301,7 +310,7 @@
 
 
 
-@media (max-width: 1830px) {
+@media (max-width: 1450px) {
     #sketch-right {
         display: none;
     }
@@ -311,15 +320,29 @@
         height: 100%;
         margin-left: 0;
         position: absolute;
-        left: 40%;
         aspect-ratio: auto;
+        background-position: top right;
     }
     
     .map-container {
-        margin: 0 auto;
+        padding: 0;
     }
     
     .background-map {
         display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    .map-container {
+        display: none;
+    }
+
+    #sketches {
+        display: none;
+    }
+
+    #notify-rotate-device {
+        display: block;
     }
 }
