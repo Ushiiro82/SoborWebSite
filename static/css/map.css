@@ -240,22 +240,31 @@
     /* margin-right: 15px; */
     z-index: 10;
     overflow-y: scroll;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 700px;
+    max-height: 400px;
     
     /* Остальные стили */
-    background: rgba(222, 216, 204, 0.95);
-    border: 2px solid #3C2F24;
+    /* background: rgba(222, 216, 204, 0.95); */
+    background-image: url(../img/prikiks/list.png);
+    background-size: auto;
+    background-position: center;
+    border: 2px solid #524235;
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
 
     color: #3C2F24;
     font-size: 20px;
-    line-height: 1.4;
+    /* line-height: 1.4; */
+
+    width: 300%;
+}
+
+.info-tooltip::-webkit-scrollbar {
+    display: none;
 }
 
 .info-tooltip h3 {
@@ -272,18 +281,15 @@
 .ermak .info-tooltip {
     top: 41%;
     right: 100%;
-    width: 250%;
 }
 
 .baklanov .info-tooltip {
     top: -12%;
     left: 106%;
-    width: 250%;
 }
 
 .consent-peace .info-tooltip {
     left: 100%;
-    width: 250%;
 }
 
 .ascension-cathedral .info-tooltip {
@@ -295,7 +301,6 @@
 .platov .info-tooltip {
     top: 41%;
     right: 100%;
-    width: 250%;
 }
 
 
@@ -310,7 +315,7 @@
 
 
 
-@media (max-width: 1450px) {
+@media (max-width: 1320px) {
     #sketch-right {
         display: none;
     }
