@@ -151,7 +151,26 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+.start-journey-btn:hover {
+  width: 500px;
+
+  .btn-text {
+    font-size: 33px;
+  }
+}
+
+.start-journey-btn:active {
+  filter: grayscale(50%);
+  width: 470px;
+
+  .btn-text {
+    font-size: 28px;
+  }
+}
+
 
 .btn-background {
     position: absolute;
@@ -169,6 +188,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+    transition: all 0.5s ease;
 }
 
 .learn-more-link {
@@ -181,29 +201,6 @@
     margin-top: 66px;
     text-decoration: none;
 }
-
-/* Navigation */
-/* .header-nav {
-    width: 32%;
-    margin-left: 20px;
-    padding-top: 22px;
-}
-
-.nav-list {
-    display: flex;
-    gap: 59px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-link {
-    font-family: Stem, -apple-system, Roboto, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-    font-weight: 500;
-    text-decoration: none;
-} */
 
 .new-hero-section {
   text-align: center;
@@ -359,5 +356,9 @@
 
   .start-journey-btn {
     width: 350px
+  }
+
+  .start-journey-btn:active {
+    width: 330px;
   }
 }
