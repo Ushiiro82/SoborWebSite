@@ -3,75 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Памятник Ермаку</title>
-
-    <link rel="stylesheet" href="../static/css/ermak.css">
+    <title>Вознесенский собор</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/ascension-cathedral.css">
 </head>
 <body>
-<header class="header">
-    <div class="header-container">
-      <img src="../static/img/Logo/LOGO.png" alt="Logo" class="logo" />
-      <nav class="main-nav">
-        <a href="#" class="nav-link">ГЛАВНАЯ</a>
-        <a href="#" class="nav-link">О ПРОЕКТЕ</a>
-        <a href="#" class="nav-link">КОНТАКТЫ</a>
-      </nav>
-    </div>
+    <!-- Главный хедер с фоновым изображением -->
+    <header class="header">
+      <div class="header-content">
+          <nav class="navigation">
+              <ul class="nav-links">
+                  <li><a href="/html/index.html">ГЛАВНАЯ</a></li>
+                  <li><a href="/html/index.html#about">О ПРОЕКТЕ</a></li>
+                  <li><a href="#contacts">КОНТАКТЫ</a></li>
+              </ul>
+              <img src="../static/img/Logo/logo_brown.png" alt="Logo" class="nav-logo" />
+
+          </nav>
+      </div>
   </header>
   
-  <main class="main-content">
-    <section class="hero-section">
-      <h1 class="monument-title">
-        <span class="title-large">В</span>ознесенский
-        <span class="title-accent">С</span>обор
-      </h1>
-  
-      <article class="monument-description">
-        <p class="element-4">
-          <span>Собор представляет собой крестчатое в плане сооружение с граненой апсидой, поэтажным архитектурным
-            членениям, гармонично найденным пропорциям главного купола <br />и боковых глав. Главный купол, венчающий
-            собор, облегчен венцом больших и малых окон. Колокольня, так же как и барабаны малых главок, имеет широкие
-            проемы звона. Уникально <br />и внутреннее устройство собора. Он состоит <br />из трех основных частей:
-            главной церкви и двух подвалов —
-          </span>
-          <span>верхнего и нижнего. Обширное подкупольное пространство наполненно светом</span>
-          <span>(диаметр барабана — 17 м)</span>
-        </p>
-      </article>
-    </section>
-  
-    <footer class="footer">
-      <img src="../static/img/prikiks/vishivka1.png" alt="Decorative divider" class="footer-divider" />
-  
-      <div class="footer-content">
-        <section class="contact-section">
-          <h2 class="contact-title">
-            <span class="title-accent">К</span>О<span class="letter-spaced">НТАКТЫ</span>
-          </h2>
-  
-          <p class="phone-number">+7 900 000 00 00</p>
-  
-          <div class="contact-item">
-            <h3 class="contact-label">ПОЧТА</h3>
-            <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
-          </div>
-  
-          <div class="contact-item">
-            <h3 class="contact-label">TELEGRAM</h3>
-            <a href="https://t.me/job_007" class="contact-link">@job_007</a>
-          </div>
-  
-          <div class="legal-links">
-            <a href="#" class="legal-link">условия пользования</a>
-            <a href="#" class="legal-link">политика конфиденциальности</a>
-          </div>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="monument-content">
+              <h1 class="monument-title">
+                <span class="title-large">В</span>ознесенский
+                <span class="title-accent">С</span>обор
+              </h1>
+              <article class="monument-description">
+                <p>Собор представляет собой крестчатое в плане сооружение с граненой апсидой, поэтажным архитектурным
+                членениям, гармонично найденным пропорциям главного купола и боковых глав. Главный купол, венчающий
+                собор, облегчен венцом больших и малых окон. Колокольня, так же как и барабаны малых главок, имеет широкие
+                проемы звона. Уникально и внутреннее устройство собора. Он состоит из трех основных частей:
+                главной церкви и двух подвалов — <strong>верхнего и нижнего. Обширное подкупольное пространство наполненно светом</strong> (диаметр барабана — <strong>17 м</strong>)</p>
+              </article>
+            </div>
+            <div class="monument-image">
+              <img src="../static/img/sobor/Sobor.png" alt="Вознесенский собор">
+              <a href="panorams/sobor_panorama.html" class="panorama-btn">ПАНОРАМА</a>
+            </div>
+          </section>
+
+
+
+
+
+        <!-- Декоративное изображение -->
+        <img src="../static/img/prikiks/vishivka1.png" alt="Decorative" class="decorative-image" />
+        
+        <!-- Секция контактов -->
+        <section class="contact-section" id="contacts">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-heading">
+                        <span class="highlight">К</span>О<span class="spaced">НТАКТЫ</span>
+                    </h2>
+                    <p class="phone-number">+7 900 000 00 00</p>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">ПОЧТА</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">TELEGRAM</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="https://t.me/job_007" class="contact-link">@job_007</a>
+                    </div>
+
+                    <footer class="footer-links">
+                        <a href="#terms" class="footer-link">условия пользования</a>
+                        <a href="#privacy" class="footer-link">политика конфиденциальности</a>
+                    </footer>
+                </div>
+
+                <div class="contact-image">
+                    <img src="../static/img/sobor/kafedr_sobor.png" alt="Contact section" class="rounded-image" />
+                </div>
+            </div>
         </section>
-  
-        <aside class="footer-image">
-          <img src="../static/img/pamatniks/Rectangle 8.png" alt="Footer decorative image" class="footer-decorative-image" />
-        </aside>
-      </div>
-    </footer>
-  </main>
+    </main>
 </body>
 </html>
