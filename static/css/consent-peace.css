@@ -88,23 +88,10 @@
   background-color: #FFFFFF;
 }
 
-.nav-links {
-  align-self: flex-end;
-  display: flex;
-  width: 80%;
-  max-width: 500px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-right: 2%;
-  gap: 20px;
-  justify-content: space-between;
-}
 
 .nav-links a {
   color: #000000;
   text-decoration: none;
-  font-size: 19px;
 }
 
 

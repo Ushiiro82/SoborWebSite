@@ -57,7 +57,7 @@
 }
 
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .nav-logo {
     width: 10%;
     top: 10px;
@@ -74,5 +74,9 @@
 @media (max-width: 400px) {
   .nav-links {
     font-size: 12px;
+  }
+
+  .nav-logo {
+    display: none;
   }
 }
