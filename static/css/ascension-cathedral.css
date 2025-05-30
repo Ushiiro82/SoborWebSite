@@ -14,7 +14,7 @@
 
 .monument-image {
   flex: 1;
-  max-width: 700px;
+  max-width: 548px;
   margin-top: 20px;
   position: relative;
 }
@@ -36,12 +36,12 @@
 
 .title-large {
   font-size: 80px;
-  color: #000000;
+  color: #AF4F2B;
 }
 
 .title-accent {
   font-size: 80px;
-  color: #AF4F2B;
+  color: #000000;
 }
 
 .monument-description {
@@ -63,7 +63,7 @@
   display: inline-block;
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  left: 20px; /* Кнопка слева */
   padding: 15px 30px; /* Увеличено для ПК */
   background-color: #AF4F2B;
   color: #FFFFFF;
@@ -104,7 +104,7 @@
 .nav-links a {
   color: #000000;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 /* Основной контент */
@@ -149,6 +149,14 @@
 
   .monument-image {
     max-width: 100%;
+  }
+
+  .monument-content {
+    order: 0; /* Текст первым на мобильных */
+  }
+
+  .monument-image {
+    order: 1; /* Кнопка панорамы вторым */
   }
 }
 

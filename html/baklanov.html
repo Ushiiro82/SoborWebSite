@@ -1,99 +1,93 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Памятник Бакланову</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/css/backlan.css">
 </head>
-<header class="header">
-    <div class="container header-container">
+<body>
+    <!-- Главный хедер с фоновым изображением -->
+    <header class="header">
       <div class="header-content">
-        <div class="logo-column">
-          <div class="logo-wrapper">
-            <img src="../static/img/pamatniks/pika.jpg" class="background-image" alt="Background image" />
-            <img src="../static/img/Logo/LOGO.png" alt="Logo" class="logo" />
-          </div>
-        </div>
-        <div class="content-column">
-          <div class="content-wrapper">
-            <nav class="main-nav">
-              <a href="#" class="nav-link">ГЛАВНАЯ</a>
-              <a href="#" class="nav-link">О ПРОЕКТЕ</a>
-              <a href="#" class="nav-link">КОНТАКТЫ</a>
-            </nav>
-            <h1 class="monument-title">
-              <span>П</span>
-              <span class="title-regular">амятник</span>
-              Б
-              <span class="title-regular">акланову</span>
-            </h1>
-            <p class="monument-description">
-              Памятник Я. П. Бакланову представляет собой скалу из неполированного
-              красного гранита, отделанного внизу «путиловской плитой». На скалу
-              была наброшена
-              <span class="highlight">бурка</span>
-              , из-под которой видна
-              <span class="highlight">
-                шашка боевого генерала и значок на сломанном древке склоненного
-                знамени
-              </span>
-              . Сверху бурки лежит
-              <span class="highlight">папаха</span>
-              . Бурка, папаха, значок и шашка были сделаны
-              <br />
-              из
-              <span class="highlight">темно-зеленой бронзы</span>
-              , детали -
-              <span class="highlight">позолочены</span>
-              .
-              <br />
-              С передней стороны врезан бронзовый медальон
-              <br />
-              с надписью:
-              <span class="highlight">
-                «Войска Донского генерал-лейтенант Яков Петрович Бакланов,
-              </span>
-              <br />
-              <span class="highlight">
-                родился в 1809 г., умер в 1873 г., окт. 18-го»
-              </span>
-            </p>
-          </div>
-        </div>
+          <nav class="navigation">
+              <ul class="nav-links">
+                  <li><a href="/html/index.html">ГЛАВНАЯ</a></li>
+                  <li><a href="/html/index.html#about">О ПРОЕКТЕ</a></li>
+                  <li><a href="#contacts">КОНТАКТЫ</a></li>
+              </ul>
+              <img src="../static/img/Logo/logo_brown.png" alt="Logo" class="nav-logo" />
+
+          </nav>
       </div>
-    </div>
   </header>
   
-  <footer class="footer">
-    <img src="../static/img/prikiks/vishivka1.png" class="footer-divider" alt="Decorative divider" />
-    <div class="footer-content">
-      <div class="footer-columns">
-        <div class="contact-column">
-          <div class="contact-wrapper">
-            <h2 class="contact-title">
-              <span class="accent-letter">К</span>О<span>НТАКТЫ</span>
-            </h2>
-            <p class="phone-number">+7 900 000 00 00</p>
-  
-            <div class="contact-item">
-              <span class="contact-label">ПОЧТА</span>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea24c0f2dccf56763357dda8842534001d845941?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" class="contact-icon" alt="Email icon" />
-              <a href="mailto:job_007@mail.ru" class="contact-value">job_007@mail.ru</a>
-            </div>
-  
-            <div class="contact-item">
-              <span class="contact-label">TELEGRAM</span>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea24c0f2dccf56763357dda8842534001d845941?placeholderIfAbsent=true&apiKey=15117e3278864322b2b52cb6dd5df25a" class="contact-icon" alt="Telegram icon" />
-              <a href="https://t.me/job_007" class="contact-value">@job_007</a>
-            </div>
-  
-            <div class="footer-links">
-              <a href="#" class="footer-link">условия пользования</a>
-              <a href="#" class="footer-link">политика конфиденциальности</a>
-            </div>
-          </div>
+  <main class="main-content">
+    <section class="hero-section">
+        <div class="monument-image">
+          <img src="../static/img/pamatniks/pika.png" alt="Памятник Бакланову">
+          <a href="panorams/baklan_panorama.html" class="panorama-btn">ПАНОРАМА</a>
         </div>
-        <div class="image-column">
-          <img src="../static/img/pamatniks/Rectangle 8.png class="footer-image" alt="Footer decorative image" />
+        <div class="monument-content">
+          <h1 class="monument-title">
+            <span class="title-large">П</span>амятник
+            <span class="title-accent">Б</span>акланову
+          </h1>
+          <article class="monument-description">
+            <p>Памятник Я. П. Бакланову представляет собой скалу из неполированного красного гранита, отделанного внизу «путиловской плитой». 
+            На скалу была наброшена <strong>бурка</strong>, из-под которой видна <strong>шашка боевого генерала и значок на сломанном древке склоненного знамени.</strong> 
+            Сверху бурки лежит <strong>папаха</strong>. Бурка, папаха, значок и шашка были сделаны из <strong>темно-зеленой бронзы</strong>, детали - <strong>позолочены</strong>. 
+            С передней стороны врезан бронзовый медальон с надписью: <strong>«Войска Донского генерал-лейтенант Яков Петрович Бакланов, родился в 1809 г., умер в 1873 г., окт. 18-го»</strong></p>
+          </article>
         </div>
-      </div>
-    </div>
-  </footer>
-  
+      </section>
+
+
+
+
+
+        <!-- Декоративное изображение -->
+        <img src="../static/img/prikiks/vishivka1.png" alt="Decorative" class="decorative-image" />
+        
+        <!-- Секция контактов -->
+        <section class="contact-section" id="contacts">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-heading">
+                        <span class="highlight">К</span>О<span class="spaced">НТАКТЫ</span>
+                    </h2>
+                    <p class="phone-number">+7 900 000 00 00</p>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">ПОЧТА</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="mailto:job_007@mail.ru" class="contact-link">job_007@mail.ru</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3 class="contact-label">TELEGRAM</h3>
+                        <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
+                        </svg>
+                        <a href="https://t.me/job_007" class="contact-link">@job_007</a>
+                    </div>
+
+                    <footer class="footer-links">
+                        <a href="#terms" class="footer-link">условия пользования</a>
+                        <a href="#privacy" class="footer-link">политика конфиденциальности</a>
+                    </footer>
+                </div>
+
+                <div class="contact-image">
+                    <img src="../static/img/sobor/kafedr_sobor.png" alt="Contact section" class="rounded-image" />
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

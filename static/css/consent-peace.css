@@ -14,7 +14,7 @@
 
 .monument-image {
   flex: 1;
-  max-width: 700px;
+  max-width: 480px;
   margin-top: 20px;
   position: relative;
 }
@@ -26,12 +26,12 @@
 
 .monument-title {
   font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 75px;
+  font-size: 67px;
   font-weight: 400;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   margin-top: 42px;
-  margin-left: 300px;
+  margin-left: 150px;
 }
 
 .title-large {
@@ -104,8 +104,9 @@
 .nav-links a {
   color: #000000;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
 }
+
 
 /* Основной контент */
 .main-content {
@@ -116,7 +117,7 @@
 @media (max-width: 1250px) {
   .monument-title {
     margin-left: 100px;
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .title-large,
@@ -139,12 +140,12 @@
   .monument-title {
     margin-left: 0;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .title-large,
   .title-accent {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .monument-image {

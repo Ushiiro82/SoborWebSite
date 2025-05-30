@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панорама Памятника Бакланову</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+            background-color: #FFFFFF;
+        }
+        #panorama {
+            width: 100%;
+            height: 100vh;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #AF4F2B;
+            color: #FFFFFF;
+            font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+        .back-btn:hover {
+            background-color: #8F3F1B;
+        }
+    </style>
+</head>
+<body>
+    <a href="../baklanov.html" class="back-btn">НАЗАД</a>
+    <div id="panorama"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "pika.jpg",
+            "autoLoad": true,
+            "autoRotate": -2,
+            "showControls": true,
+            "compass": false
+        });
+    </script>
+</body>
+</html>
