@@ -44,14 +44,16 @@
   color: #AF4F2B;
 }
 
-.monument-description {
+.monument-scroll {
+  max-height: 700px; /* Высота для скроллинга */
+  overflow-y: auto; /* Вертикальный скроллинг */
   font-size: 25px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  margin: 25px;
   text-align: justify;
+  margin: 25px;
 }
 
 .monument-description p {
@@ -88,7 +90,6 @@
   background-color: #FFFFFF;
 }
 
-
 .nav-links a {
   color: #000000;
   text-decoration: none;
@@ -111,7 +112,7 @@
     font-size: 65px;
   }
 
-  .monument-description {
+  .monument-scroll {
     font-size: 20px;
     line-height: 40px;
   }
@@ -137,6 +138,10 @@
   .monument-image {
     max-width: 100%;
   }
+
+  .monument-scroll {
+    max-height: 250px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -149,10 +154,11 @@
     font-size: 40px;
   }
 
-  .monument-description {
+  .monument-scroll {
     font-size: 16px;
     line-height: 30px;
     margin: 15px;
+    max-height: 200px;
   }
 
   .monument-image img {

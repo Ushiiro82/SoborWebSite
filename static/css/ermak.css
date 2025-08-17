@@ -44,14 +44,16 @@
   color: #AF4F2B;
 }
 
-.monument-description {
+.monument-scroll {
+  max-height: 700px; /* Высота для скроллинга */
+  overflow-y: auto; /* Вертикальный скроллинг */
   font-size: 25px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  margin: 25px;
   text-align: justify;
+  margin: 25px;
 }
 
 .monument-description p {
@@ -64,11 +66,11 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  padding: 15px 30px; /* Увеличено для ПК */
+  padding: 15px 30px;
   background-color: #AF4F2B;
   color: #FFFFFF;
   font-family: Zabava, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 20px; /* Увеличено для ПК */
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -87,7 +89,6 @@
   position: relative;
   background-color: #FFFFFF;
 }
-
 
 .nav-links a {
   color: #000000;
@@ -111,7 +112,7 @@
     font-size: 65px;
   }
 
-  .monument-description {
+  .monument-scroll {
     font-size: 20px;
     line-height: 40px;
   }
@@ -137,6 +138,10 @@
   .monument-image {
     max-width: 100%;
   }
+
+  .monument-scroll {
+    max-height: 250px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -149,27 +154,28 @@
     font-size: 40px;
   }
 
-  .monument-description {
+  .monument-scroll {
     font-size: 16px;
     line-height: 30px;
     margin: 15px;
+    max-height: 200px;
   }
 
   .monument-image img {
-    display: none; /* Скрываем изображение на мобильных */
+    display: none;
   }
 
   .panorama-btn {
-    position: static; /* Убираем абсолютное позиционирование */
+    position: static;
     display: block;
-    margin: 0 auto; /* Центрируем кнопку */
-    font-size: 22px; /* Меньший размер для мобильных */
-    padding: 16px 32px; /* Меньший размер для мобильных */
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 16px 32px;
     text-align: center;
   }
 
   .monument-image {
-    text-align: center; /* Центрируем содержимое блока */
-    margin-top: 0; /* Убираем отступ сверху */
+    text-align: center;
+    margin-top: 0;
   }
 }
