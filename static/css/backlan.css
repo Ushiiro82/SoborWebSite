@@ -176,21 +176,17 @@
   .panorama-btn {
     position: static;
     display: block;
-    margin: 10px auto;
+    margin: 0 auto 20px; /* Отступ снизу, чтобы кнопка была под текстом */
     font-size: 18px;
     padding: 12px 24px;
     text-align: center;
-    order: 2; /* Помещаем кнопку под текст */
+    width: fit-content; /* Ограничивает ширину кнопки по содержимому */
   }
 
   .monument-image {
     text-align: center;
     margin-top: 0;
-    order: 1; /* Изображение (скрытое) остается первым, но кнопка идет после текста */
-  }
-
-  .monument-content {
-    order: 3; /* Текст остается последним */
+    margin-bottom: 10px; /* Добавлен отступ снизу для кнопки */
   }
 
   /* Уменьшение расстояния между пунктами меню в хедере */
