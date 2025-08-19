@@ -254,9 +254,8 @@
             }
         });
 
-        // Перехватываем клики на hot spots, чтобы предотвратить стандартное поведение
-        viewer.on('mousedown', function(event) {
-            const hotSpot = viewer.getHotSpot(event);
+        // Перехватываем клики на hot spots с помощью события hotspotclick
+        viewer.on('hotspotclick', function(event, hotSpot) {
             if (hotSpot && hotSpot.type === 'info' && hotSpot.clickHandlerFunc) {
                 event.preventDefault(); // Предотвращаем стандартное поведение (открытие новой вкладки)
                 hotSpot.clickHandlerFunc(null, hotSpot.clickHandlerArgs);
