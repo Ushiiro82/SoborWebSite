@@ -180,11 +180,17 @@
     font-size: 18px;
     padding: 12px 24px;
     text-align: center;
+    order: 2; /* Помещаем кнопку под текст */
   }
 
   .monument-image {
     text-align: center;
     margin-top: 0;
+    order: 1; /* Изображение (скрытое) остается первым, но кнопка идет после текста */
+  }
+
+  .monument-content {
+    order: 3; /* Текст остается последним */
   }
 
   /* Уменьшение расстояния между пунктами меню в хедере */
