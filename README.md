@@ -61,6 +61,9 @@
 
 ## 🖼 Галерея
 
+### Видео/трейлер
+<video src="https://github.com/user-attachments/assets/35fabcb8-a72d-4105-97a2-cac1347981ca"></video>
+
 ### Главная страница
 ![Main page](readme/main.png)
 
